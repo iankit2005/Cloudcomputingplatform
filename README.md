@@ -5,7 +5,7 @@ The project is developed using **Java Swing (GUI), MySQL, JDBC & Core OOP princi
 
 ---
 
-## ⭐ Features
+## Features
 
 ### 🔹 Admin Module
 - Manage platform users  
@@ -23,25 +23,33 @@ The project is developed using **Java Swing (GUI), MySQL, JDBC & Core OOP princi
 
 ---
 
-## 🏗 Architecture Overview (MVC Layered)
+## Architecture Overview (Exact Project Structure)
 
 ```
 /src
-├── models
-│   ├── User
-│   ├── AdminUser
-│   ├── NormalUser
-│   └── Resource
 ├── database
-│   └── DatabaseManager
+│   └── DatabaseManager.java
+│
+├── models
+│   ├── AdminUser.java
+│   ├── NormalUser.java
+│   ├── Resource.java
+│   └── User.java
+│
 ├── ui
-│   ├── LoginPage
-│   ├── AdminDashboard
-│   └── UserDashboard
-└── utils
-    ├── DBConfig
-    └── InvalidLoginException
+│   ├── AdminDashboard.java
+│   ├── Dashboard.java        ← Interface
+│   ├── LoginPage.java
+│   └── UserDashboard.java
+│
+├── utils
+│   ├── DBConfig.java
+│   └── InvalidLoginException.java
+│
+└── TestDB.java   (Database testing utility)
 ```
+
+This structure follows **pure MVC + layered architecture**, ensuring clean separation of concerns.
 
 ---
 
@@ -60,7 +68,7 @@ The project is developed using **Java Swing (GUI), MySQL, JDBC & Core OOP princi
 
 ---
 
-## 🧰 Technology Stack
+## Technology Stack
 
 | Layer | Tools |
 |-------|-------|
@@ -73,7 +81,7 @@ The project is developed using **Java Swing (GUI), MySQL, JDBC & Core OOP princi
 
 ---
 
-## 🔑 Key Java Concepts Used
+## Key Java Concepts Used
 
 | Concept | Where Used |
 |--------|------------|
@@ -88,7 +96,7 @@ The project is developed using **Java Swing (GUI), MySQL, JDBC & Core OOP princi
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 1. Clone the repository  
 2. Import the project into **IntelliJ IDEA**  
@@ -97,7 +105,7 @@ The project is developed using **Java Swing (GUI), MySQL, JDBC & Core OOP princi
 5. Import database using `cloud_platform.sql`  
 6. Run main class: `src/ui/LoginPage.java`
 
-### 🔐 Sample Credentials
+### Sample Credentials
 **Admin Login**  
 Email: `admin@example.com`  
 Password: `******`
@@ -110,7 +118,7 @@ Password: `*******`
 
 ---
 
-## 🚦 Development Status
+## Development Status
 
 | Review Stage | Status |
 |-------------|--------|
@@ -120,21 +128,21 @@ Password: `*******`
 
 ---
 
-## 🍳 Cooked By
+## Cooked By
 
 | Name | Role |
 |------|------|
-| Ankit Kumar | Full Stack Developer |
+| Ankit Kumar | java Developer |
 
 ---
 
-## 🌟 Notes
+## Notes
 This project strictly follows **college cloud computing project guidelines** and the **Java GUI-based marking rubric**.  
 The codebase is designed to be highly scalable for future cloud computing functions.
 
 ---
 
-## 💬 Final Request
+## Final Request
 **Please kindly check my code.  
 If you have any suggestions, corrections, or improvements — please notify me.  
 Thank you for your valuable suggestions — _Ankit (Developer)._**
