@@ -307,6 +307,5 @@ Cloudcomputingplatform/
 ## 13. Notes
 
 - Project strictly follows college cloud computing guidelines.
-- Designed for maximum evaluation score.
-- Scalable and extensible architecture.
+
 
